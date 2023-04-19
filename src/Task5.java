@@ -2,9 +2,11 @@
 // Требуется восстановить выражение до верного равенства.Предложить хотя бы одно решение или сообщить,что его нет.
 
 
+import java.util.Scanner;
+
 public class Task5 {
     public static void main(String[] args) {
-        String equation = "2? + 5? = 69";
+        String equation = "2? + ?5 = 69";
         System.out.println("Исходное уравнение: " + equation);
         Solution(equation);
     }
