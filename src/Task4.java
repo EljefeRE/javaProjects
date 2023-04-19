@@ -17,24 +17,22 @@ public class Task4 {
         System.out.println("Введите операцию: ");
         char op = sc.nextLine().charAt(0);
 
-        if (op == '+'){
+        if (op == '+') {
             System.out.println(num1 + num2);
         } else if (op == '-') {
             System.out.println(num1 - num2);
         } else if (op == '/') {
-            if(num2 != 0){
+            if (num2 != 0) {
                 System.out.println((double) num1 / num2);
-            }else {
+            } else {
                 System.out.println("На ноль делить нельзя");
             }
         } else if (op == '*') {
             System.out.println(num1 * num2);
-        }else {
+        } else {
             System.out.println("Не известная операция");
         }
     }
-
-
 
 
 }
