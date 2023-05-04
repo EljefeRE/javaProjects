@@ -26,8 +26,9 @@ public class PhoneBook {
 
     String getByNumber(String number) {
         StringBuilder sb = new StringBuilder();
-        for (Map.Entry entry : map.entrySet()) {
-            if (entry.getValue().equals(number)) {
+        for (Map.Entry<String, List<String>> entry : map.entrySet()) {
+            List<String> list = entry.getValue();
+            if (list.contains(number)) {
                 sb.append(entry.getKey());
                 sb.append(": ");
                 sb.append(entry.getValue());
